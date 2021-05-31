@@ -7,18 +7,18 @@ This is a sample project for building pipeline of Hugo site on AWS using terrafo
 
 1. create `main.tf`
 
-```bash
-cp main.tf.sample main.tf
-```
+    ```bash
+    cp main.tf.sample main.tf
+    ```
 
 2. plan
 
-```bash
-terraform plan
-```
+    ```bash
+    terraform plan
+    ```
 
 3. apply
 
-```bash
-terraform apply
-```
+    ```bash
+    terraform apply
+    ```
