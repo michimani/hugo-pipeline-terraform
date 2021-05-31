@@ -1,0 +1,4 @@
+.terraform*
+
+# your own files
+main.tf
