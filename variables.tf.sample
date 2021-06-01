@@ -1,5 +1,5 @@
 variable "hugo_bucket_name" {
-  default = "hugo-bucket-20210531"
+  default = "" // your S3 Bucket for Hugo site objects.
 }
 
 variable "s3_origin_id" {

@@ -2,3 +2,4 @@
 
 # your own files
 main.tf
+variables.tf
