@@ -1,4 +1,4 @@
-resource "aws_cloudfront_distribution" "distribution" {
+resource "aws_cloudfront_distribution" "hugo_distribution" {
   origin {
     domain_name = aws_s3_bucket.hugo_bucket.bucket_regional_domain_name
     origin_id   = var.s3_origin_id

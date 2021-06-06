@@ -5,3 +5,7 @@ variable "hugo_bucket_name" {
 variable "s3_origin_id" {
   default = "hugoS3Origin"
 }
+
+variable "github_location" {
+  default = "" // your repository location of Hugo project at GitHub
+}
