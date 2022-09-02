@@ -1,11 +1,8 @@
 resource "aws_cloudfront_distribution" "hugo_distribution" {
   origin {
-    domain_name = aws_s3_bucket.hugo_bucket.bucket_regional_domain_name
-    origin_id   = var.s3_origin_id
-
-    s3_origin_config {
-      origin_access_identity = aws_cloudfront_origin_access_identity.hugo_origin_access.cloudfront_access_identity_path
-    }
+    domain_name              = aws_s3_bucket.hugo_bucket.bucket_regional_domain_name
+    origin_id                = var.s3_origin_id
+    origin_access_control_id = aws_cloudfront_origin_access_control.hugo_oac.id
   }
 
   enabled             = true
